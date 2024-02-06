@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cinza: #aaa;
+    --azul: #092a69;
+    --azul-escuro: #030e33;
+    --branca: #fff;
+    --luz: rgb(249, 253, 207);
+    --fundo: black;
+    --fonte: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background: linear-gradient(45deg, #b2cfee 0%, #7d97b4 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fonte);
+    min-height: 90vh;
+}
+
+h1 {
+    color: var(--fundo);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.teclado {
+    background: linear-gradient(to bottom, #8f8d8d 0%, #646363 75%);
+    box-shadow: 10px 10px 10px #555454;
+    border-radius: 50;
+    display: inline;
+    gap: 25px;
+    padding: 10px;
+    position: sticky;
+    top: 15vh;
+}
+
+.tecla {
+    background-color: var(--branca);
+    border-radius: 10px;
+    color: var(--cinza);
+    cursor: pointer;
+    height: 375px;
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    padding-top: 275px;
+    width: 120px;
+}
+
+.teclado_preto {
+    z-index: 1;   /*posiciona na frente das outras teclas*/
+    display: grid;
+    text-align: center;
+    grid-template-columns: 20vh 36vh 20vh 20vh 36vh 20vh 20vh;
+    /* Define a largura de cada coluna a*/
+    grid-column-gap: 0;    
+    position: fixed;
+    top: 18.5vh;
+}
+
+
+.tecla_preta {
+    background-color: black;
+    border-radius: 10px;
+    color: var(--cinza);
+    cursor: pointer;
+    height: 250px;
+    font-size: 1.25em;
+    line-height: 425px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+.tecla.ativa,
+.tecla:active {
+    background-color: var(--azul);
+    border: 4px transparent var(--azul);
+    box-shadow: 3px 3px 0 var(--azul-escuro) inset;
+    color: var(--branca);
+    outline: none;
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+    box-shadow: 3px 3px 0 var(--azul-escuro) inset, 2px 2px 2px var(--luz);
+}
+
+
+.tecla_preta.ativa,
+.tecla_preta:active {
+    background-color: #030e33;
+    border: 4px transparent var(--azul);
+    box-shadow: 3px 3px 0 var(--azul-escuro) inset;
+    color: var(--branca);
+    outline: none;
+}
+
+.tecla_preta.active:focus,
+.tecla_preta:active:focus {
+    box-shadow: 3px 3px 0 var(--azul-escuro) inset, 2px 2px 2px var(--luz);
+}
+
+.legenda_teclado {
+    position: sticky;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(10, 1fr);    /*7 colunas ocupando cada uma 1 fração da grid*/
+    column-gap: 85px;    /*espaçamento entre colunas*/
+}
+
+.legenda_teclado_preto {
+    position: sticky;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 20vh 35vh 20vh 20vh 35vh 20vh 20vh;    /* Define a largura de cada coluna */
+    grid-column-gap: 0;
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+
+.legenda {
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte);
+    font-size: 1.25rem;
+    color: var(--azul);
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.legenda_superior {
+    text-align: left;
+    font-weight: normal;
+    font-family: var(--fonte);
+    font-size: 1.25rem;
+    color: var(--azul);
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.rodape {
+    color: white;
+    background-color: var(--azul);
+    padding: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte);
+    font-size: 1.25rem;
+    height: 20px;
+    /* Define a altura do rodapé */
+    width: 100%;
+    /*rodape ocupa toda a pagina horizontalmente*/
+    position: fixed;
+    /*fixa rodapé no final da página*/
+    bottom: 0;
+}

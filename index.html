@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado virtual</title>
+
+    <link rel="icon" type="image/png" href="imagens/teclado.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <section class="legenda_teclado_preto">
+        <label class="legenda_superior legenda_DO#">DO#</label>
+        <label class="legenda_superior legenda_RE#">RE#</label>
+        
+        <label class="legenda_superior legenda_FA#">FA#</label>
+        <label class="legenda_superior legenda_SOL#">SOL#</label>
+        <label class="legenda_superior legenda_LA#">LA#</label>
+
+        <label class="legenda_superior legenda_DO#agudo">DO#</label>
+        <label class="legenda_superior legenda_RE#agudo">RE#</label>
+    </section>
+
+    <section class="teclado">
+        <button class="tecla tecla_DO">A</button>
+        <button class="tecla tecla_RE">S</button>
+        <button class="tecla tecla_MI">D</button>
+        <button class="tecla tecla_FA">F</button>
+        <button class="tecla tecla_SOL">G</button>
+        <button class="tecla tecla_LA">H</button>
+        <button class="tecla tecla_SI">J</button>  
+        <button class="tecla tecla_DOagudo">K</button>
+        <button class="tecla tecla_REagudo">L</button>
+        <button class="tecla tecla_MIagudo">Ç</button>
+    </section>
+
+    <section class="teclado_preto">
+        <button class="tecla_preta tecla_DOsust">W</button>
+        <button class="tecla_preta tecla_REsust">E</button>
+  
+        <button class="tecla_preta tecla_FAsust">T</button>
+        <button class="tecla_preta tecla_SOLsust">Y</button>
+        <button class="tecla_preta tecla_LAsust">U</button>
+
+        <button class="tecla_preta tecla_DOsustAgudo">O</button>
+        <button class="tecla_preta tecla_REsustAgudo">P</button>
+    </section>
+
+    <section class="legenda_teclado">
+        <label class="legenda legenda_DO">DO</label>
+        <label class="legenda legenda_RE">RE</label>
+        <label class="legenda legenda_MI">MI</label>
+        <label class="legenda legenda_FA">FA</label>
+        <label class="legenda legenda_SOL">SOL</label>
+        <label class="legenda legenda_LA">LA</label>
+        <label class="legenda legenda_SI">SI</label>
+        <label class="legenda legenda_DOagudo">DO</label>
+        <label class="legenda legenda_REagudo">RE</label>
+        <label class="legenda legenda_MIagudo">MI</label>
+    </section>
+
+    <audio src="sons_notas/DO.mp3" id="som_tecla_DO"></audio>
+    <audio src="sons_notas/DOsust.mp3" id="som_tecla_DOsust"></audio>
+    <audio src="sons_notas/RE.mp3" id="som_tecla_RE"></audio>
+    <audio src="sons_notas/REsust.mp3" id="som_tecla_REsust"></audio>
+    <audio src="sons_notas/MI.mp3" id="som_tecla_MI"></audio>
+    <audio src="sons_notas/FA.mp3" id="som_tecla_FA"></audio>
+    <audio src="sons_notas/FAsust.mp3" id="som_tecla_FAsust"></audio>
+    <audio src="sons_notas/SOL.mp3" id="som_tecla_SOL"></audio>
+    <audio src="sons_notas/SOLsust.mp3" id="som_tecla_SOLsust"></audio>
+    <audio src="sons_notas/LA.mp3" id="som_tecla_LA"></audio>
+    <audio src="sons_notas/LAsust.mp3" id="som_tecla_LAsust"></audio>
+    <audio src="sons_notas/SI.mp3" id="som_tecla_SI"></audio>
+    <audio src="sons_notas/DOagudo.mp3" id="som_tecla_DOagudo"></audio>
+    <audio src="sons_notas/DOsustAgudo.mp3" id="som_tecla_DOsustAgudo"></audio>
+    <audio src="sons_notas/REagudo.mp3" id="som_tecla_REagudo"></audio>
+    <audio src="sons_notas/REsustAgudo.mp3" id="som_tecla_REsustAgudo"></audio>
+    <audio src="sons_notas/MIagudo.mp3" id="som_tecla_MIagudo"></audio>
+
+    <!--chma arquivo JS depois de declarar todos as tags que serão utilizadas dentro do mesmo-->
+    <script src="main.js"></script>
+
+</body>
+
+<footer class="rodape">
+    <p>Desenvolvido por Ana :]</p>
+</footer>
+
+</html>
