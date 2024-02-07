@@ -35,11 +35,11 @@ h1 {
 
 .teclado {
     background: linear-gradient(to bottom, #8f8d8d 0%, #646363 75%);
-    box-shadow: 10px 10px 10px #555454;
+    box-shadow: 1vh 1vh 1vh #555454;
     border-radius: 50;
     display: inline;
-    gap: 25px;
-    padding: 10px;
+    gap: 5vh;
+    padding: 1vh;
     position: sticky;
     top: 15vh;
 }
@@ -49,20 +49,19 @@ h1 {
     border-radius: 10px;
     color: var(--cinza);
     cursor: pointer;
-    height: 375px;
+    height: 55vh;
     font-size: 1.25em;
     font-weight: bold;
-    line-height: 120px;
     text-align: center;
-    padding-top: 275px;
-    width: 120px;
+    padding-top: 45vh;
+    width: 19vh;
 }
 
 .teclado_preto {
     z-index: 1;   /*posiciona na frente das outras teclas*/
     display: grid;
     text-align: center;
-    grid-template-columns: 20vh 36vh 20vh 20vh 36vh 20vh 20vh;
+    grid-template-columns: 20vh 40vh 20vh 20vh 40vh 20vh 20vh;
     /* Define a largura de cada coluna a*/
     grid-column-gap: 0;    
     position: fixed;
@@ -75,12 +74,12 @@ h1 {
     border-radius: 10px;
     color: var(--cinza);
     cursor: pointer;
-    height: 250px;
+    height: 38vh;
     font-size: 1.25em;
-    line-height: 425px;
+    line-height: 65vh;
     font-weight: bold;
     text-align: center;
-    width: 100px;
+    width: 15vh;
 }
 
 .tecla.ativa,
@@ -117,14 +116,14 @@ h1 {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(10, 1fr);    /*7 colunas ocupando cada uma 1 fração da grid*/
-    column-gap: 85px;    /*espaçamento entre colunas*/
+    column-gap: 13.5vh;    /*espaçamento entre colunas*/
 }
 
 .legenda_teclado_preto {
     position: sticky;
     display: grid;
     text-align: center;
-    grid-template-columns: 20vh 35vh 20vh 20vh 35vh 20vh 20vh;    /* Define a largura de cada coluna */
+    grid-template-columns: 20vh 40vh 20vh 20vh 40vh 20vh 20vh;    /* Define a largura de cada coluna */
     grid-column-gap: 0;
     margin-top: 5vh;
     margin-left: 10vh;
