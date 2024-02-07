@@ -65,7 +65,7 @@ h1 {
     /* Define a largura de cada coluna a*/
     grid-column-gap: 0;    
     position: fixed;
-    top: 18.5vh;
+    top: 20vh;
 }
 
 
